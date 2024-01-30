@@ -53,7 +53,7 @@ def giris():
 
 		kullanıcı = db["kullanıcılar"].find_one({"_id":email })
 		if kullanıcı and kullanıcı["sifre"]==sifre:
-			return "Giriş başarılı"
+			return redirect("/",302)
 		else:
 			return "kullanıcı bulunamadı veya şifre geçersiz"
 
