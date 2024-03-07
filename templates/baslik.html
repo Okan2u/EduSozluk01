@@ -43,7 +43,7 @@
   <div class="row">
     <div class="col-sm-4">
       {% if session['kullanici'] %}
-      <h5>Kullanıcı: {{ session['kullanici']['adsoyad'] }}</h5>
+      <h5>Kullanıcı: <img src="data:image/png;base64,{{resim}}" width="20" class="rounded-circle" alt="Cinque Terre"> {{ session['kullanici']['adsoyad'] }}</h5>
       {% endif %}
       <h3 class="mt-3">Gündem
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal1">+Yeni Başlık</button>

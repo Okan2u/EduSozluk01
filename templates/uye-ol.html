@@ -13,7 +13,7 @@
   <h1>Yeni Üye</h1>
   <p>Bilgileri doldurarark yeni hesap açabilirsiniz.</p>
 </div>
-<form action="/uye-ol" method="post">
+<form action="/uye-ol" method="post" enctype="multipart/form-data">
   <div class="mb-3 mt-3">
     <label for="email" class="form-label">Email:</label>
     <input type="email" class="form-control" id="email" placeholder="Email giriniz" name="email">
@@ -25,6 +25,10 @@
     <div class="mb-3 mt-3">
     <label for="adsoyad" class="form-label">Ad Soyad:</label>
     <input type="text" class="form-control" id="adsoyad" placeholder="Ad Soyad giriniz" name="adsoyad">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="myfile">Fotoğraf yükle:</label>
+    <input type="file" id="myfile" name="myfile" accept=".png,.jpg">
   </div>
   <button type="submit" class="btn btn-primary">Gönder</button>
 </form>
